@@ -1,8 +1,8 @@
 import styles from '../styles/Button.module.css'
 
-const ToggleButton = () => {
+const ToggleButton = ({onClick, btnColor, textColor, text}) => {
     return (
-        <button className={styles.btn}>Show more</button>
+        <button onClick={onClick} className={styles.btn} style={{backgroundColor: btnColor, color: textColor}}>{text}</button>
     )
 }
 
