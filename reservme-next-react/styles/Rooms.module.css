@@ -3,3 +3,35 @@
   padding: 10px;
   margin: 0 auto;
 }
+
+.roomControl {
+  display: grid;
+  grid-template-areas:
+    ". studio . onebed ."
+    "twobed . premium . presidential";
+}
+
+#studio {
+  grid-area: studio;
+  width: 230px;
+}
+
+#onebed {
+  grid-area: onebed;
+  width: 230px;
+}
+
+#twobed {
+  grid-area: twobed;
+  width: 230px;
+}
+
+#premium {
+  grid-area: premium;
+  width: 230px;
+}
+
+#presidential {
+  grid-area: presidential;
+  width: 230px;
+}
