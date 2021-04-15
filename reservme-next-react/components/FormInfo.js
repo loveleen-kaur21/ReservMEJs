@@ -1,7 +1,7 @@
 import styles from '../styles/Forms.module.css'
 import { useState } from 'react'
 
-const FormInfo = ({ onSave }) => {
+const FormInfo = ({ onSave, id }) => {
     const [fName, setFname] = useState('')
     const [lName, setLname] = useState('')
     const [street, setStreet] = useState('')
