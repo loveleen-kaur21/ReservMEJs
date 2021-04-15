@@ -1,7 +1,14 @@
 import styles from '../styles/Forms.module.css'
 import { useState } from 'react'
+import SubmitInfoButton from './SubmitInfoButton'
 
-const FormInfo = ({ onSave }) => {
+
+// Save form
+const save = (form) => {
+    console.log('')
+  }
+
+const FormInfo = () => {
     const [fName, setFname] = useState('')
     const [lName, setLname] = useState('')
     const [street, setStreet] = useState('')
@@ -16,7 +23,9 @@ const FormInfo = ({ onSave }) => {
     const [expiration, setExpiration] = useState('')
     const [cardHolderName, setCardHolderName] = useState('')
 
-    const onSubmit = () => {
+
+    const onSubmit = (e) => {
+        e.preventDefault()
         if (!fName) {
             alert('Please add First Name')
             return
@@ -41,9 +50,19 @@ const FormInfo = ({ onSave }) => {
         } else if (!phone) {
             alert('Please enter your phone number.')
             return
+        } else if (!cardCompany) {
+            alert('Please enter your Card Company.')
+        } else if (!cardNumber) {
+            alert('Please enter your Card Number.')
+        } else if (!csv) {
+            alert('Please enter your CSV number.')
+        } else if (!expiration) {
+            alert("Please enter your card's expiration date.")
+        } else if (!cardHolderName) {
+            alert("Please enter the card holder's name.")
         }
-        onSave({ fName, lName, street, city, state, zipCode, email, phone })
     }
+
 
     return (
         <form className={styles.addForm} onSubmit={onSubmit}>
@@ -145,6 +164,7 @@ const FormInfo = ({ onSave }) => {
                 value={cardHolderName}
                 onChange={(e) => setCardHolderName(e.target.value)}></input>
             </div>
+            <SubmitInfoButton color='green' text='Reserve me now!'onSave={save({ fName, lName, street, city, state, zipCode, email, phone })} />
             </div>        
             </form>
             )
