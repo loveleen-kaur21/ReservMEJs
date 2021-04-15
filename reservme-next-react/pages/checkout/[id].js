@@ -15,7 +15,6 @@ export default function handler() {
     <div>
         <FormInfo id={id}/>
         <h3>This is a {id} suite</h3>
-        <SubmitInfoButton color='green' text='Reserve me now!' onSave={save} />
     </div>
     )
 }
