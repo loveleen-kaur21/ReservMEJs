@@ -32,7 +32,7 @@ const RoomForms = ({rooms}) => {
                 {showTwoBedDesc && <TwoBedDesc />}
             </div>
             <div id={styles.premium} className={styles.roomCard}>
-                <h2>Premium Suite</h2>
+                <h2>Premium</h2>
                 <ToggleButton onClick={() => setShowPremium(!showPremiumDesc)} btnColor={showPremiumDesc ? "pink": "blue"} text={showPremiumDesc ? "Hide" : "Show more"} textColor={showPremiumDesc ? "black" : "white"} />
                 {showPremiumDesc && <PremiumDesc />}
             </div>

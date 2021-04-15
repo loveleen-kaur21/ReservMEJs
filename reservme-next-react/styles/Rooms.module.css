@@ -35,3 +35,17 @@
   grid-area: presidential;
   width: 230px;
 }
+
+.selectLink {
+  display: inline-block;
+  background: blue;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px auto;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
