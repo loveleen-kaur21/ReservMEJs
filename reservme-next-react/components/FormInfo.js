@@ -1,14 +1,25 @@
 import styles from '../styles/Forms.module.css'
 import { useState } from 'react'
 import SubmitInfoButton from './SubmitInfoButton'
-
+import {rooms} from '../data'
 
 // Save form
-const save = (form) => {
-    console.log('')
-  }
+const save = (form, id) => {
+    const filtered = rooms.filter((room) => (room.available && room.name === id)).shift()
+    filtered.guestInfo['fullName'] = `${form.fName} ${form.lName}`;
+    filtered.guestInfo['address'] = `${form.street}, ${form.city}`
+    filtered.guestInfo['zipcode'] = `${form.zipCode}`;
+    filtered.guestInfo['email'] = `${form.email}`;
+    filtered.guestInfo['state'] = `${form.state}`;
+    filtered.guestInfo['phoneNumber'] = `${form.phoneNumber}`
+    filtered.payment['cardCompany'] = `${form.cardCompany}`
+    filtered.payment['cardNumber'] = `${form.cardNumber}`
+    filtered.payment['csv'] = `${form.csv}`
+    filtered.payment['expirationDate'] = `${form.expiration}`
+    filtered.payment['cardholderName'] = `${form.cardHolderName}`
+}
 
-const FormInfo = () => {
+const FormInfo = ({id}) => {
     const [fName, setFname] = useState('')
     const [lName, setLname] = useState('')
     const [street, setStreet] = useState('')
@@ -22,6 +33,7 @@ const FormInfo = () => {
     const [csv, setCsv] = useState('')
     const [expiration, setExpiration] = useState('')
     const [cardHolderName, setCardHolderName] = useState('')
+
 
 
     const onSubmit = (e) => {
@@ -60,6 +72,8 @@ const FormInfo = () => {
             alert("Please enter your card's expiration date.")
         } else if (!cardHolderName) {
             alert("Please enter the card holder's name.")
+        } else {
+            save({ fName, lName, street, city, state, zipCode, email, phone, cardCompany, cardNumber, csv, expiration, cardHolderName }, id)
         }
     }
 
@@ -164,7 +178,7 @@ const FormInfo = () => {
                 value={cardHolderName}
                 onChange={(e) => setCardHolderName(e.target.value)}></input>
             </div>
-            <SubmitInfoButton color='green' text='Reserve me now!'onSave={save({ fName, lName, street, city, state, zipCode, email, phone })} />
+            <SubmitInfoButton color='green' text='Reserve me now!' />
             </div>        
             </form>
             )
