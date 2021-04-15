@@ -1,12 +1,9 @@
 import FormInfo from '../../components/FormInfo'
-import SubmitInfoButton from '../../components/SubmitInfoButton'
 import {useRouter} from 'next/router'
 
 export default function handler() {
     const router = useRouter()
-    console.log(router)
     const {id} = router.query
-    console.log(id)
     // Save form
     const save = (form) => {
     console.log(form)
