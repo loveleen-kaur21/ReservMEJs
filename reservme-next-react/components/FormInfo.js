@@ -187,7 +187,11 @@ const FormInfo = ({id}) => {
                 value={cardHolderName}
                 onChange={(e) => setCardHolderName(e.target.value)}></input>
             </div>
-            <h3>Your total is {price(id)}</h3>
+            <div>
+                <h3>Reservation Summary</h3>
+                <p>Suite Type: {id}</p>
+                <p>Total Cost: ${price(id)}</p>
+            </div>
             <SubmitInfoButton color='green' text='Reserve me now!' />
             </div>        
             </form>

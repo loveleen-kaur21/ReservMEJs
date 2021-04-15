@@ -8,7 +8,6 @@ export default function handler() {
     return (
     <div>
         <FormInfo id={id}/>
-        <h3>This is a {id} suite</h3>
     </div>
     )
 }
