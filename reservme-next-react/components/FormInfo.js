@@ -3,6 +3,8 @@ import { useState } from 'react'
 import SubmitInfoButton from './SubmitInfoButton'
 import {rooms} from '../data'
 
+
+
 // Save form
 const save = (form, id) => {
     const filtered = rooms.filter((room) => (room.available && room.name === id)).shift()
@@ -18,6 +20,7 @@ const save = (form, id) => {
     filtered.payment['expirationDate'] = `${form.expiration}`
     filtered.payment['cardholderName'] = `${form.cardHolderName}`
 }
+
 
 const FormInfo = ({id}) => {
     const [fName, setFname] = useState('')
@@ -35,6 +38,12 @@ const FormInfo = ({id}) => {
     const [cardHolderName, setCardHolderName] = useState('')
 
 
+    const price = (id) => {
+        const filtered = rooms.filter((room) => (room.available && room.name === id)).shift()
+        if (filtered) {
+            return filtered.price
+        }
+        }
 
     const onSubmit = (e) => {
         e.preventDefault()
@@ -178,6 +187,7 @@ const FormInfo = ({id}) => {
                 value={cardHolderName}
                 onChange={(e) => setCardHolderName(e.target.value)}></input>
             </div>
+            <h3>Your total is {price(id)}</h3>
             <SubmitInfoButton color='green' text='Reserve me now!' />
             </div>        
             </form>
@@ -185,4 +195,6 @@ const FormInfo = ({id}) => {
         }
     
 export default FormInfo
+
+
 

@@ -1,4 +1,5 @@
 export const rooms = [
+    
     {
         id: '1',
         name: 'studio',
