@@ -4,6 +4,11 @@
   margin: 0 auto;
   background-color: white;
   opacity: 90%;
+  text-align: center;
+}
+
+.roomCard > div > p {
+  font-size: small;
 }
 
 .roomControl {
