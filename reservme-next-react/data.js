@@ -2,7 +2,7 @@ export const rooms = [
     
     {
         id: '1',
-        name: 'studio',
+        name: 'Studio',
         price: 149,
         available: true,
         guestInfo: {
@@ -23,7 +23,7 @@ export const rooms = [
     },
     {
         id: '2',
-        name: 'studio',
+        name: 'Studio',
         price: 149,
         available: true,
         guestInfo: {
@@ -44,7 +44,7 @@ export const rooms = [
     },
     {
         id: '3',
-        name: 'studio',
+        name: 'Studio',
         price: 149,
         available: true,
         guestInfo: {
@@ -65,7 +65,7 @@ export const rooms = [
     },
     {
         id: '4',
-        name: 'studio',
+        name: 'Studio',
         price: 149,
         available: true,
         guestInfo: {
@@ -86,7 +86,7 @@ export const rooms = [
     },
     {
         id: '5',
-        name: 'studio',
+        name: 'Studio',
         price: 149,
         available: true,
         guestInfo: {
@@ -108,7 +108,7 @@ export const rooms = [
     },
     {
         id: '6',
-        name: 'studio',
+        name: 'Studio',
         price: 149,
         available: true,
         guestInfo: {
@@ -129,7 +129,7 @@ export const rooms = [
     },
     {
         id: '7',
-        name: 'studio',
+        name: 'Studio',
         price: 149,
         available: true,
         guestInfo: {
@@ -150,7 +150,7 @@ export const rooms = [
     },
     {
         id: '8',
-        name: 'studio',
+        name: 'Studio',
         price: 149,
         available: true,
         guestInfo: {
@@ -171,7 +171,7 @@ export const rooms = [
     },
     {
         id: '9',
-        name: 'studio',
+        name: 'Studio',
         price: 149,
         available: true,
         guestInfo: {
@@ -192,7 +192,7 @@ export const rooms = [
     },
     {
         id: '10',
-        name: 'studio',
+        name: 'Studio',
         price: 149,
         available: true,
         guestInfo: {
@@ -213,7 +213,7 @@ export const rooms = [
     },
     {
         id: '11',
-        name: 'onebed',
+        name: 'Onebed',
         price: 99,
         available: true,
         guestInfo: {
@@ -234,7 +234,7 @@ export const rooms = [
     },
     {
         id: '12',
-        name: 'onebed',
+        name: 'Onebed',
         price: 99,
         available: true,
         guestInfo: {
@@ -255,7 +255,7 @@ export const rooms = [
     },
     {
         id: '13',
-        name: 'onebed',
+        name: 'Onebed',
         price: 99,
         available: true,
         guestInfo: {
@@ -276,7 +276,7 @@ export const rooms = [
     },
     {
         id: '14',
-        name: 'onebed',
+        name: 'Onebed',
         price: 99,
         available: true,
         guestInfo: {
@@ -297,7 +297,7 @@ export const rooms = [
     },
     {
         id: '15',
-        name: 'onebed',
+        name: 'Onebed',
         price: 99,
         available: true,
         guestInfo: {
@@ -318,7 +318,7 @@ export const rooms = [
     },
     {
         id: '16',
-        name: 'onebed',
+        name: 'Onebed',
         price: 99,
         available: true,
         guestInfo: {
@@ -339,7 +339,7 @@ export const rooms = [
     },
     {
         id: '17',
-        name: 'onebed',
+        name: 'Onebed',
         price: 99,
         available: true,
         guestInfo: {
@@ -360,7 +360,7 @@ export const rooms = [
     },
     {
         id: '18',
-        name: 'onebed',
+        name: 'Onebed',
         price: 99,
         available: true,
         guestInfo: {
@@ -381,7 +381,7 @@ export const rooms = [
     },
     {
         id: '19',
-        name: 'onebed',
+        name: 'Onebed',
         price: 99,
         available: true,
         guestInfo: {
@@ -402,7 +402,7 @@ export const rooms = [
     },
     {
         id: '20',
-        name: 'onebed',
+        name: 'Onebed',
         price: 99,
         available: true,
         guestInfo: {
@@ -423,7 +423,7 @@ export const rooms = [
     },
     {
         id: '21',
-        name: 'twobed',
+        name: 'Twobed',
         price: 154,
         available: true,
         guestInfo: {
@@ -444,7 +444,7 @@ export const rooms = [
     },
     {
         id: '22',
-        name: 'twobed',
+        name: 'Twobed',
         price: 154,
         available: true,
         guestInfo: {
@@ -465,7 +465,7 @@ export const rooms = [
     },
     {
         id: '23',
-        name: 'twobed',
+        name: 'Twobed',
         price: 154,
         available: true,
         guestInfo: {
@@ -486,7 +486,7 @@ export const rooms = [
     },
     {
         id: '24',
-        name: 'twobed',
+        name: 'Twobed',
         price: 154,
         available: true,
         guestInfo: {
@@ -507,7 +507,7 @@ export const rooms = [
     },
     {
         id: '25',
-        name: 'twobed',
+        name: 'Twobed',
         price: 154,
         available: true,
         guestInfo: {
@@ -528,7 +528,7 @@ export const rooms = [
     },
     {
         id: '26',
-        name: 'twobed',
+        name: 'Twobed',
         price: 154,
         available: true,
         guestInfo: {
@@ -549,7 +549,7 @@ export const rooms = [
     },
     {
         id: '27',
-        name: 'twobed',
+        name: 'Twobed',
         price: 154,
         available: true,
         guestInfo: {
@@ -570,7 +570,7 @@ export const rooms = [
     },
     {
         id: '28',
-        name: 'twobed',
+        name: 'Twobed',
         price: 154,
         available: true,
         guestInfo: {
@@ -591,7 +591,7 @@ export const rooms = [
     },
     {
         id: '29',
-        name: 'twobed',
+        name: 'Twobed',
         price: 154,
         available: true,
         guestInfo: {
@@ -612,7 +612,7 @@ export const rooms = [
     },
     {
         id: '30',
-        name: 'twobed',
+        name: 'Twobed',
         price: 154,
         available: true,
         guestInfo: {
@@ -633,7 +633,7 @@ export const rooms = [
     },
     {
         id: '31',
-        name: 'presidential',
+        name: 'Presidential',
         price: 259,
         available: true,
         guestInfo: {
@@ -654,7 +654,7 @@ export const rooms = [
     },
     {
         id: '32',
-        name: 'presidential',
+        name: 'Presidential',
         price: 259,
         available: true,
         guestInfo: {
@@ -675,7 +675,7 @@ export const rooms = [
     },
     {
         id: '33',
-        name: 'presidential',
+        name: 'Presidential',
         price: 259,
         available: true,
         guestInfo: {
@@ -696,7 +696,7 @@ export const rooms = [
     },
     {
         id: '34',
-        name: 'presidential',
+        name: 'Presidential',
         price: 259,
         available: true,
         guestInfo: {
@@ -717,7 +717,7 @@ export const rooms = [
     },
     {
         id: '35',
-        name: 'presidential',
+        name: 'Presidential',
         price: 259,
         available: true,
         guestInfo: {
@@ -738,7 +738,7 @@ export const rooms = [
     },
     {
         id: '36',
-        name: 'presidential',
+        name: 'Presidential',
         price: 259,
         available: true,
         guestInfo: {
@@ -759,7 +759,7 @@ export const rooms = [
     },
     {
         id: '37',
-        name: 'presidential',
+        name: 'Presidential',
         price: 259,
         available: true,
         guestInfo: {
@@ -780,7 +780,7 @@ export const rooms = [
     },
     {
         id: '38',
-        name: 'presidential',
+        name: 'Presidential',
         price: 259,
         available: true,
         guestInfo: {
@@ -801,7 +801,7 @@ export const rooms = [
     },
     {
         id: '39',
-        name: 'presidential',
+        name: 'Presidential',
         price: 259,
         available: true,
         guestInfo: {
@@ -822,7 +822,7 @@ export const rooms = [
     },
     {
         id: '40',
-        name: 'presidential',
+        name: 'Presidential',
         price: 259,
         available: true,
         guestInfo: {
@@ -843,7 +843,7 @@ export const rooms = [
     },
     {
         id: '41',
-        name: 'premium',
+        name: 'Premium',
         price: 324,
         available: true,
         guestInfo: {
@@ -864,7 +864,7 @@ export const rooms = [
     },
     {
         id: '42',
-        name: 'premium',
+        name: 'Premium',
         price: 324,
         available: true,
         guestInfo: {
@@ -885,7 +885,7 @@ export const rooms = [
     },
     {
         id: '43',
-        name: 'premium',
+        name: 'Premium',
         price: 324,
         available: true,
         guestInfo: {
@@ -906,7 +906,7 @@ export const rooms = [
     },
     {
         id: '44',
-        name: 'premium',
+        name: 'Premium',
         price: 324,
         available: true,
         guestInfo: {
@@ -927,7 +927,7 @@ export const rooms = [
     },
     {
         id: '45',
-        name: 'premium',
+        name: 'Premium',
         price: 324,
         available: true,
         guestInfo: {
@@ -948,7 +948,7 @@ export const rooms = [
     },
     {
         id: '46',
-        name: 'premium',
+        name: 'Premium',
         price: 324,
         available: true,
         guestInfo: {
@@ -969,7 +969,7 @@ export const rooms = [
     },
     {
         id: '47',
-        name: 'premium',
+        name: 'Premium',
         price: 324,
         available: true,
         guestInfo: {
@@ -990,7 +990,7 @@ export const rooms = [
     },
     {
         id: '48',
-        name: 'premium',
+        name: 'Premium',
         price: 324,
         available: true,
         guestInfo: {
@@ -1011,7 +1011,7 @@ export const rooms = [
     },
     {
         id: '49',
-        name: 'premium',
+        name: 'Premium',
         price: 324,
         available: true,
         guestInfo: {
@@ -1032,7 +1032,7 @@ export const rooms = [
     },
     {
         id: '50',
-        name: 'premium',
+        name: 'Premium',
         price: 324,
         available: true,
         guestInfo: {

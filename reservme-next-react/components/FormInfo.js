@@ -1,5 +1,6 @@
 import styles from '../styles/Forms.module.css'
 import { useState } from 'react'
+import Link from 'next/link'
 import SubmitInfoButton from './SubmitInfoButton'
 import {rooms} from '../data'
 
@@ -86,6 +87,10 @@ const FormInfo = ({id}) => {
         }
     }
 
+    const reservation = () => {
+        const reservation = { fName, lName, street, city, state, zipCode, email, phone, cardCompany, cardNumber, csv, expiration, cardHolderName, id }
+        return reservation
+    }
 
     return (
         <form className={styles.addForm} onSubmit={onSubmit}>
@@ -192,7 +197,9 @@ const FormInfo = ({id}) => {
                 <p>Suite Type: {id}</p>
                 <p>Total Cost: ${price(id)}</p>
             </div>
-            <SubmitInfoButton color='green' text='Reserve me now!' />
+            <Link href={{pathname: "../receipt", query: {object: JSON.stringify(reservation()) } }}>
+                <a><SubmitInfoButton color='green' text='Reserve me now!' /></a>
+            </Link>
             </div>        
             </form>
             )
