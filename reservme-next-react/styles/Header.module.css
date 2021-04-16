@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight&display=swap');
+
 .title a,
 .title span {
   color: #0070f3;
@@ -14,6 +17,8 @@
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 15px;
 }
 
 .title,
@@ -26,4 +31,7 @@
   font-size: 1.5rem;
   margin: 5px;
   margin-bottom: 3rem;
+  font-family: 'Zilla Slab Highlight', cursive;
+  padding-top: 10px;
+  padding-bottom: 15px;
 }
