@@ -1,4 +1,5 @@
 import {rooms} from '../data'
+import styles from '../styles/Receipt.module.css'
 
 const Receipt = ({reservation}) => {
     const price = (id) => {
@@ -8,7 +9,7 @@ const Receipt = ({reservation}) => {
         }
     }
     return (
-        <div>
+        <div className={styles.receiptContainer}>
             <div>
                 <h3>Guest Information</h3>
                 <p>Name: {reservation.fName} {reservation.lName}</p>

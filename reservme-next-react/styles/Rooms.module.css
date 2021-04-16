@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+
+.roomCard > h2{
+  font-family: 'Julius Sans One', sans-serif;
+}
 .roomCard {
   border: 2px solid black;
   padding: 10px;
@@ -5,10 +13,12 @@
   background-color: white;
   opacity: 90%;
   text-align: center;
+
 }
 
 .roomCard > div > p {
   font-size: small;
+  font-family: 'Sriracha', cursive;
 }
 
 .roomControl {
@@ -54,5 +64,5 @@
   cursor: pointer;
   text-decoration: none;
   font-size: 15px;
-  font-family: inherit;
+  font-family: 'Julius Sans One', sans-serif;
 }

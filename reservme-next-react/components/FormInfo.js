@@ -37,7 +37,6 @@ const FormInfo = ({id}) => {
     const [csv, setCsv] = useState('')
     const [expiration, setExpiration] = useState('')
     const [cardHolderName, setCardHolderName] = useState('')
-    const [formFilled, setFormFilled] = useState(false)
 
 
     const price = (id) => {
@@ -45,7 +44,7 @@ const FormInfo = ({id}) => {
         if (filtered) {
             return filtered.price
         }
-    }
+        }
 
     const onSubmit = (e) => {
         e.preventDefault()
@@ -85,12 +84,11 @@ const FormInfo = ({id}) => {
             alert("Please enter the card holder's name.")
         } else {
             save({ fName, lName, street, city, state, zipCode, email, phone, cardCompany, cardNumber, csv, expiration, cardHolderName }, id)
-            setFormFilled(!formFilled)
         }
     }
 
     const reservation = () => {
-        const reservation = { fName, lName, street, city, state, zipCode, email, phone, cardCompany, cardNumber, csv, expiration, cardHolderName, id, price }
+        const reservation = { fName, lName, street, city, state, zipCode, email, phone, cardCompany, cardNumber, csv, expiration, cardHolderName, id }
         return reservation
     }
 
@@ -200,7 +198,7 @@ const FormInfo = ({id}) => {
                 <p>Total Cost: ${price(id)}</p>
             </div>
             <Link href={{pathname: "../receipt", query: {object: JSON.stringify(reservation()) } }}>
-                {formFilled ? <a><SubmitInfoButton color='green' text='Reserve me now!' /></a> : <SubmitInfoButton color='green' text='Reserve me now!' />}  
+                <a><SubmitInfoButton color='green' text='Reserve me now!' /></a>
             </Link>
             </div>        
             </form>

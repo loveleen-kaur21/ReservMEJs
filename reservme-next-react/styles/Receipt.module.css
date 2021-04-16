@@ -1,0 +1,15 @@
+.receiptContainer {
+    background-color: white;
+    opacity: 90%;
+    padding-left: 20px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.receiptContainer > div > h3 {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  
